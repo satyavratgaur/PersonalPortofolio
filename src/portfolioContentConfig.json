@@ -1,0 +1,39 @@
+{
+  "navbar":{
+    "logo":{
+      "large":"./logo/...",
+      "small":"./logo/...",
+    },
+  },
+  "segmentLinks":[
+    {
+      "icon":"",
+      "title":"",
+      "link":"",
+      "isExternal":false,
+      "externalIcon":true,
+    }
+  ],
+  "sideBar":{
+    "photo":"",
+    "title":"",
+    "social":[
+      {
+        "icon":"",
+        "text":"",
+        "link":"",
+        "socialMediabg":"",
+        "isExternal":true,
+        "externalIcon":false,
+      }
+    ],
+    "sideCard":{},
+  },
+  "mainContent":[
+    {
+      "id":"",
+      "title":"",
+    }
+  ]
+}
+}
