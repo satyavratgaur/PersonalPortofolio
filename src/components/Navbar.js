@@ -39,7 +39,7 @@ const LinkContainer = styled.div`
   &:hover {
     color: ${primaryColor};
     border-bottom: 4px solid ${primaryColor};
-    border-radius: 12px
+    border-radius: 12px;
     transition: width 1s;
   }
 `;
