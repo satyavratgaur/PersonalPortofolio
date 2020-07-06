@@ -1,16 +1,15 @@
 import React from 'react';
-import './App.css';
-import Overview from './pages/overview';
-import Grid from './components/grid';
-
+import Overview from './pages/home';
+import { Button } from '@material-ui/core';
+import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
+import config from './portfolioContentConfig.json';
 
 function App() {
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <Grid />
-      </header> 
+    <div className='App'>
+      <Navbar contentConfig = {config.navbar}/>
+      <Sidebar />
     </div>
   );
 }

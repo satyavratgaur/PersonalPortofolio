@@ -1,39 +1,66 @@
 {
-  "navbar":{
-    "logo":{
-      "large":"./logo/...",
-      "small":"./logo/...",
+  "navbar": {
+    "logo": {
+      "large": "./logo/...",
+      "small": "./logo/..."
     },
-  },
-  "segmentLinks":[
-    {
-      "icon":"",
-      "title":"",
-      "link":"",
-      "isExternal":false,
-      "externalIcon":true,
-    }
-  ],
-  "sideBar":{
-    "photo":"",
-    "title":"",
-    "social":[
+    "segmentLinks": [
       {
-        "icon":"",
-        "text":"",
-        "link":"",
-        "socialMediabg":"",
-        "isExternal":true,
-        "externalIcon":false,
+        "icon": "BookOpen",
+        "title": "Overview",
+        "link": "#overview",
+        "isExternal": false,
+        "externalIcon": false
+      },
+      {
+        "icon": "Award",
+        "title": "Technologies",
+        "link": "#technologies",
+        "isExternal": false,
+        "externalIcon": false
+      },
+      {
+        "icon": "Work",
+        "title": "Experience",
+        "link": "#experience",
+        "isExternal": false,
+        "externalIcon": false
+      },
+      {
+        "icon": "Terminal",
+        "title": "Projects",
+        "link": "#projects",
+        "isExternal": false,
+        "externalIcon": false
+      },
+      {
+        "icon": "Substack",
+        "title": "Blog",
+        "link": "https://satyavratgaur.substack.com/",
+        "isExternal": true,
+        "externalIcon": true
+      }
+    ]
+  },
+  "sideBar": {
+    "photo": "",
+    "title": "",
+    "social": [
+      {
+        "icon": "",
+        "text": "",
+        "link": "",
+        "socialMediabg": "",
+        "isExternal": true,
+        "externalIcon": false
       }
     ],
-    "sideCard":{},
+    "sideCard": {}
   },
-  "mainContent":[
+  "mainContent": [
     {
-      "id":"",
-      "title":"",
+      "id": "",
+      "title": ""
     }
   ]
-}
 }

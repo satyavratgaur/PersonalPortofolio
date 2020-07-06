@@ -9,7 +9,9 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-feather": "^2.0.8",
     "react-scripts": "3.4.1",
+    "react-svg": "^11.0.29",
     "styled-components": "^5.1.1"
   },
   "scripts": {
