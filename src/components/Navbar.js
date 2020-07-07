@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import theme from '../styles/theme';
 import Logo from '../assets/LogoLarge';
 import LogoSmall from '../assets/LogoSmall';
-import BookOpen from '../assets/BookOpen';
 import { ExternalLink } from 'react-feather';
 
 const primaryColor = theme.palette.primary.main;
@@ -57,7 +56,6 @@ const Link = styled.a`
 `;
 
 const Navbar = ({ contentConfig }) => {
-  console.log({ contentConfig });
   return (
     <NavbarContainer>
       <StyledLogo fill={initialGray} width={150} height={50} />

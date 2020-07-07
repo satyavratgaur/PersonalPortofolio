@@ -2,6 +2,9 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import green from '@material-ui/core/colors/green';
 
 const theme = createMuiTheme({
+  typography: {
+    fontFamily: 'Muli',
+  },
   palette: {
     primary: {
       main: '#3A89FF',
@@ -13,7 +16,6 @@ const theme = createMuiTheme({
       main: '#9C9C9C',
     },
   },
-  fontFamily: ['Muli'],
 });
 
 export default theme;

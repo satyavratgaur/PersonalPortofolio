@@ -47,10 +47,34 @@
     "title": "",
     "social": [
       {
-        "icon": "",
-        "text": "",
-        "link": "",
-        "socialMediabg": "",
+        "icon": "Facebook",
+        "text": "/satyavratgaur",
+        "link": "https://www.facebook.com/satyavratgaur",
+        "socialMediabg": "#1778F2",
+        "isExternal": true,
+        "externalIcon": false
+      },
+      {
+        "icon": "Github",
+        "text": "/satyavratgaur",
+        "link": "https://github.com/satyavratgaur",
+        "socialMediabg": "#211F1F",
+        "isExternal": true,
+        "externalIcon": false
+      },
+      {
+        "icon": "Linkedin",
+        "text": "/satyavratgaur",
+        "link": "https://www.linkedin.com/in/satyavratgaur/",
+        "socialMediabg": "#2867B2",
+        "isExternal": true,
+        "externalIcon": false
+      },
+      {
+        "icon": "Instagram",
+        "text": "@satyavratgaur",
+        "link": "https://www.instagram.com/satyavratgaur/",
+        "socialMediabg": "#C13584",
         "isExternal": true,
         "externalIcon": false
       }
