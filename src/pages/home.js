@@ -16,7 +16,7 @@ const Home = ({ config }) => {
   return (
     <HomeContainer>
       <Grid container spacing={3} justify='center' alignItems='center'>
-        <Grid container item xs={12} md={3}>
+        <Grid container item sm={12} md={3}>
           <Sidebar sidebarContent={config.sideBar} />
         </Grid>
         <Grid item xs={12} md={9}>

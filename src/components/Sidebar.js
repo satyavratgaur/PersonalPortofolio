@@ -31,10 +31,18 @@ const SideCard = styled.div``;
 
 const Sidebar = ({ sidebarContent }) => {
   return (
-    <SidebarContainer item container justify='center' alignItems='center'>
+    <SidebarContainer
+      item
+      container
+      direction='column'
+      justify='center'
+      alignItems='center'
+    >
       <SidebarImage src={profilePhoto} alt='UniversalStudios' />
 
-      <h2>Satyavrat Gaur</h2>
+      <div>
+        <h2>Satyavrat Gaur</h2>
+      </div>
 
       {/* Social Media Information */}
 
