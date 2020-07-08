@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Overview from '../components/Overview';
 
 const MainContentContainer = styled.div`
   padding: 16px;
@@ -42,6 +43,7 @@ const MainContent = ({ mainContent }) => {
         magna et eu. Commodo elit laboris elit ex. Ad minim non adipisicing
         officia. Minim laboris aliquip exercitation nisi fugiat.
       </b>
+      <Overview />
     </MainContentContainer>
   );
 };

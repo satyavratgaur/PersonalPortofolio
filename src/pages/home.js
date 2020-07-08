@@ -15,7 +15,7 @@ const Home = ({ config }) => {
   console.log(theme);
   return (
     <HomeContainer>
-      <Grid container spacing={3} justify='center' alignItems='center'>
+      <Grid container spacing={3}>
         <Grid container item sm={12} md={3}>
           <Sidebar sidebarContent={config.sideBar} />
         </Grid>

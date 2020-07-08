@@ -8,7 +8,10 @@ import Grid from '@material-ui/core/Grid';
 
 const primaryColor = theme.palette.primary.main;
 const initialGray = theme.palette.gray.main;
-const SidebarContainer = styled(Grid)``;
+const SidebarContainer = styled(Grid)`
+  align-content: center;
+  text-align: center;
+`;
 
 const SidebarImage = styled.img`
   width: 200px;
@@ -31,13 +34,7 @@ const SideCard = styled.div``;
 
 const Sidebar = ({ sidebarContent }) => {
   return (
-    <SidebarContainer
-      item
-      container
-      direction='column'
-      justify='center'
-      alignItems='center'
-    >
+    <SidebarContainer item container direction='column'>
       <SidebarImage src={profilePhoto} alt='UniversalStudios' />
 
       <div>
@@ -45,7 +42,6 @@ const Sidebar = ({ sidebarContent }) => {
       </div>
 
       {/* Social Media Information */}
-
       {sidebarContent.social.map((item) => {
         const SocialMediaContainer = styled.div`
           display: flex;
