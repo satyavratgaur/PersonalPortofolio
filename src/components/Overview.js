@@ -10,7 +10,7 @@ const Card = styled.div`
   padding: 24px;
   flex-direction: 'row';
   border: 1px solid #d7d7d7;
-  border-radius: 24px;
+  border-radius: 12px;
 `;
 
 const CardLeft = styled.div`

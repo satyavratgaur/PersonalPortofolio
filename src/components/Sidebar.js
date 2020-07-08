@@ -11,6 +11,7 @@ const initialGray = theme.palette.gray.main;
 
 const SidebarContainer = styled(Grid)`
   align-content: center;
+  align-items: center;
   text-align: center;
 `;
 
@@ -40,11 +41,23 @@ const SideCard = styled.div`
 
 const SideCardTop = styled.div`
   display: flex;
-  background-color: grey;
   flex: 1;
+  background-color: grey;
+  flex-direction: column;
+  text-align: left;
   padding: 0px 12px;
   border-radius: 12px;
 `;
+
+const College = styled.div`
+
+`;
+
+const Course = styled.div`
+
+`;
+
+const Year = styled.div
 
 const Quote = styled.div`
   margin: 12px 0px;
@@ -109,10 +122,6 @@ const Sidebar = ({ sidebarContent }) => {
       <SideCard>
         <SideCardTop>
           <h4>Education</h4>
-          <p>
-            Exercitation proident nisi minim dolor cillum labore magna cupidatat
-            aute exercitation adipisicing sint. Nisi anim nostrud incididunt
-          </p>
         </SideCardTop>
         <Quote>
           <p>
