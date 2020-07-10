@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import theme from '../styles/theme';
 import profilePhoto from '../assets/universal_photo.jpeg';
+import GradHat from '../assets/GradHat.png';
+import GradHatG from '../assets/GradHatG.png';
 import { hexToRgbA } from '../helpers/helpers';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
@@ -37,27 +39,50 @@ const SideCard = styled.div`
   flex-direction: column;
   /* border: 2px solid red; */
   border-radius: 12px;
+  margin: 12px;
 `;
 
 const SideCardTop = styled.div`
   display: flex;
   flex: 1;
-  background-color: grey;
+  background-color: #f3f3f3;
   flex-direction: column;
   text-align: left;
-  padding: 0px 12px;
+  padding: 12px;
   border-radius: 12px;
 `;
 
-const College = styled.div`
+const Education = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 12px 0px;
+`;
 
+const College = styled.div`
+  display: flex;
+  flex: 2;
+  color: 'grey';
+  align-items: center;
+`;
+
+const StyledImg = styled.img`
+  height: 18px;
+  width: 20px;
 `;
 
 const Course = styled.div`
-
+  display: flex;
+  flex: 1;
+  font-size: 10px;
+  flex-direction: column;
+  align-items: center;
+  color: black;
 `;
 
-const Year = styled.div
+const Year = styled.span`
+  color: black;
+  font-size: 18px;
+`;
 
 const Quote = styled.div`
   margin: 12px 0px;
@@ -74,6 +99,15 @@ const SideCardBottom = styled.div`
   border-radius: 12px;
 `;
 
+const EducationHeading = styled.span`
+  font-size: 24px;
+  font-weight: bold;
+  padding: 6px;
+`;
+
+const CollegeText = styled.span`
+  padding: 0px 12px;
+`;
 const Sidebar = ({ sidebarContent }) => {
   return (
     <SidebarContainer item container direction='column'>
@@ -90,7 +124,6 @@ const Sidebar = ({ sidebarContent }) => {
           &:hover {
             color: ${item.socialMediabg};
             background: ${hexToRgbA(item.socialMediabg, 0.15)};
-            /* background: linear-gradient(90deg, rgba(131,58,180,) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
             border-radius: 12px;
             transition: width 1s;
           }
@@ -121,7 +154,26 @@ const Sidebar = ({ sidebarContent }) => {
       {/* Side Card */}
       <SideCard>
         <SideCardTop>
-          <h4>Education</h4>
+          <EducationHeading>Education</EducationHeading>
+          <Education>
+            <College>
+              <StyledImg src={GradHat} />
+              <CollegeText>ASU</CollegeText>
+            </College>
+            <Course>
+              MS in IT<Year>2020</Year>
+            </Course>
+          </Education>
+          {/* <br /> */}
+          <Education>
+            <College colgray='grey'>
+              <StyledImg src={GradHat} />
+              <CollegeText>Thapar University</CollegeText>
+            </College>
+            <Course colgray='grey'>
+              BS in ECE<Year colgray='grey'>2017</Year>
+            </Course>
+          </Education>
         </SideCardTop>
         <Quote>
           <p>
