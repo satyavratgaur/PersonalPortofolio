@@ -8,7 +8,7 @@ const Card = styled.div`
   display: flex;
   margin: 24px 0px;
   padding: 24px;
-  flex-direction: 'row';
+  flex-direction: row;
   border: 1px solid #d7d7d7;
   border-radius: 12px;
 `;

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import theme from '../styles/theme';
 import profilePhoto from '../assets/universal_photo.jpeg';
 import GradHat from '../assets/GradHat.png';
-import GradHatG from '../assets/GradHatG.png';
 import { hexToRgbA } from '../helpers/helpers';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
@@ -12,6 +11,7 @@ const primaryColor = theme.palette.primary.main;
 const initialGray = theme.palette.gray.main;
 
 const SidebarContainer = styled(Grid)`
+  margin-top: 100px;
   align-content: center;
   align-items: center;
   text-align: center;

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Overview from '../components/Overview';
 import Technologies from '../components/Technologies';
+import Experience from '../components/Experience';
+import Projects from '../components/Projects';
 
 const MainContentContainer = styled.div`
   padding: 16px;
@@ -46,6 +48,8 @@ const MainContent = ({ mainContent }) => {
       </b>
       <Overview />
       <Technologies />
+      <Experience />
+      <Projects />
     </MainContentContainer>
   );
 };

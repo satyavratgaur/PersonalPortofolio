@@ -30,7 +30,7 @@ const ProgressBar = styled(LinearProgress)`
   color: ${primaryColor};
   background-color: ${initialGray};
   border-radius: 12px;
-  height: 20px;
+  height: 10px !important;
 `;
 
 const Technologies = () => {
