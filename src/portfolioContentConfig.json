@@ -84,7 +84,19 @@
   "mainContent": [
     {
       "id": "",
-      "title": ""
+      "title": "",
+      "projects":
+      {
+        "headline":"",
+        "technologies":[
+          {
+            "stack":""
+          },
+          {
+            "stack":""
+          }
+        ]
+      }
     }
   ]
 }

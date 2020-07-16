@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
 import Chip from '@material-ui/core/Chip';
 import theme from '../styles/theme';
+import { Dialog } from '@material-ui/core';
 
 const primaryColor = theme.palette.primary.main;
 const initialGray = theme.palette.gray.main;
@@ -42,12 +43,23 @@ const StyledChip = styled(Chip)`
   } */
 `;
 
+export const DialogOpen = styled(Dialog)``;
+
 const Projects = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const handleDialog = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
       <h2>Projects</h2>
       <Grid container justify='space-around'>
-        <ProjectsContainer>
+        <ProjectsContainer onClick={handleDialog}>
           <ProjectCard>
             <ProjectHeadline>Project Headline</ProjectHeadline>
             <ProjectTags>
@@ -55,50 +67,6 @@ const Projects = () => {
               <StyledChip variant='outlined' size='small' label='ReactJS' />
               <StyledChip variant='outlined' size='small' label='ReactJS' />
               <StyledChip variant='outlined' size='small' label='ReactJS' />
-            </ProjectTags>
-          </ProjectCard>
-        </ProjectsContainer>
-        <ProjectsContainer>
-          <ProjectCard>
-            <ProjectHeadline>Project Headline</ProjectHeadline>
-            <ProjectTags>
-              <StyledChip label='ReactJS' />
-              <StyledChip label='ReactJS' />
-              <StyledChip label='ReactJS' />
-              <StyledChip label='ReactJS' />
-            </ProjectTags>
-          </ProjectCard>
-        </ProjectsContainer>
-        <ProjectsContainer>
-          <ProjectCard>
-            <ProjectHeadline>Project Headline</ProjectHeadline>
-            <ProjectTags>
-              <StyledChip label='ReactJS' />
-              <StyledChip label='ReactJS' />
-              <StyledChip label='ReactJS' />
-              <StyledChip label='ReactJS' />
-            </ProjectTags>
-          </ProjectCard>
-        </ProjectsContainer>
-        <ProjectsContainer>
-          <ProjectCard>
-            <ProjectHeadline>Project Headline</ProjectHeadline>
-            <ProjectTags>
-              <StyledChip label='ReactJS' />
-              <StyledChip label='ReactJS' />
-              <StyledChip label='ReactJS' />
-              <StyledChip label='ReactJS' />
-            </ProjectTags>
-          </ProjectCard>
-        </ProjectsContainer>
-        <ProjectsContainer>
-          <ProjectCard>
-            <ProjectHeadline>Project Headline</ProjectHeadline>
-            <ProjectTags>
-              <StyledChip label='ReactJS' />
-              <StyledChip label='ReactJS' />
-              <StyledChip label='ReactJS' />
-              <StyledChip label='ReactJS' />
             </ProjectTags>
           </ProjectCard>
         </ProjectsContainer>
