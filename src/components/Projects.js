@@ -49,8 +49,7 @@ const StyledChip = styled(Chip)`
 
 const DialogOpen = styled(Dialog)``;
 
-const DialogTitle = styled(MuiDialogTitle)`
-`;
+const DialogTitle = styled(MuiDialogTitle)``;
 
 // const DialogTitle1 = withStyles(styles)((props) => {
 //   const { children, classes, onClose, ...other } = props;
@@ -116,7 +115,9 @@ const Projects = () => {
               This is the Description for the project that I completed this year
             </p>
             <p>
-              Fuck this shit! i'm going home
+              Exercitation proident nisi minim dolor cillum labore magna
+              cupidatat aute exercitation adipisicing sint. Nisi anim nostrud
+              incididunt labore aute ex et aliquip
             </p>
           </DialogContent>
           <DialogActions>
