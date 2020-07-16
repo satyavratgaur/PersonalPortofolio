@@ -3,7 +3,11 @@ import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
 import Chip from '@material-ui/core/Chip';
 import theme from '../styles/theme';
-import { Dialog } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import MuiDialogTitle from '@material-ui/core/DialogTitle';
+import MuiDialogContent from '@material-ui/core/DialogContent';
+import MuiDialogActions from '@material-ui/core/DialogActions';
 
 const primaryColor = theme.palette.primary.main;
 const initialGray = theme.palette.gray.main;
@@ -43,7 +47,36 @@ const StyledChip = styled(Chip)`
   } */
 `;
 
-export const DialogOpen = styled(Dialog)``;
+const DialogOpen = styled(Dialog)``;
+
+const DialogTitle = styled(MuiDialogTitle)`
+`;
+
+// const DialogTitle1 = withStyles(styles)((props) => {
+//   const { children, classes, onClose, ...other } = props;
+//   return (
+//     <MuiDialogTitle disableTypography className={classes.root} {...other}>
+//       <Typography variant='h6'>{children}</Typography>
+//       {onClose ? (
+//         <IconButton
+//           aria-label='close'
+//           className={classes.closeButton}
+//           onClick={onClose}
+//         >
+//           <CloseIcon />
+//         </IconButton>
+//       ) : null}
+//     </MuiDialogTitle>
+//   );
+// });
+
+const DialogContent = styled(MuiDialogContent)`
+  /* padding: ; */
+`;
+const DialogActions = styled(MuiDialogActions)`
+  margin: 0;
+  /* padding: ; */
+`;
 
 const Projects = () => {
   const [open, setOpen] = React.useState(false);
@@ -70,6 +103,28 @@ const Projects = () => {
             </ProjectTags>
           </ProjectCard>
         </ProjectsContainer>
+        <Dialog
+          onClose={handleClose}
+          aria-labelledby='customized-dialog-title'
+          open={open}
+        >
+          <DialogTitle id='customized-dialog-title' onClose={handleClose}>
+            Project Headline for the Project
+          </DialogTitle>
+          <DialogContent dividers>
+            <p>
+              This is the Description for the project that I completed this year
+            </p>
+            <p>
+              Fuck this shit! i'm going home
+            </p>
+          </DialogContent>
+          <DialogActions>
+            <Button autoFocus onClick={handleClose} color='primary'>
+              Save changes
+            </Button>
+          </DialogActions>
+        </Dialog>
       </Grid>
     </>
   );

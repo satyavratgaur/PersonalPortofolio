@@ -85,18 +85,26 @@
     {
       "id": "",
       "title": "",
-      "projects":
-      {
-        "headline":"",
-        "technologies":[
-          {
-            "stack":""
-          },
-          {
-            "stack":""
+      "projects": [
+        {
+          "id": "",
+          "headline": "",
+          "technologies": [
+            {
+              "stack": ""
+            },
+            {
+              "stack": ""
+            }
+          ],
+          "projectdescription": {
+            "Title":"",
+            "imageURL":"",
+            "Link":"",
+            "Link Title":"",
           }
-        ]
-      }
+        }
+      ]
     }
   ]
 }
