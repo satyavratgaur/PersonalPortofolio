@@ -46,7 +46,7 @@ const MediaCard = ({ src, title, heading, subheading, content }) => {
   );
 };
 
-const Overview = () => {
+const Overview = ({ interests }) => {
   return (
     <OverviewContainer>
       <MediaCard
@@ -56,13 +56,17 @@ const Overview = () => {
         subheading='subheading'
         content='This is the content for the card'
       />
-      <MediaCard
-        src={profilePhoto}
-        title='Title'
-        heading='heading'
-        subheading='subheading'
-        content='This is the content for the card'
-      />
+      {interests.hobbies.map((item) => {
+        return (
+          <MediaCard
+            src={item.src}
+            title={item.title}
+            heading={item.heading}
+            subheading={item.subheading}
+            content={item.content}
+          />
+        );
+      })}
     </OverviewContainer>
   );
 };

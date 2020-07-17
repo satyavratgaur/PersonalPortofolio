@@ -177,19 +177,10 @@ const Sidebar = ({ sidebarContent }) => {
         </SideCardTop>
         <Quote>
           <p>
-            <i>
-              "Exercitation proident nisi minim dolor cillum labore magna
-              cupidatat aute exercitation adipisicing sint. Nisi anim nostrud
-              incididunt labore aute ex et aliquip. Id eiusmod duis duis enim
-              ullamco occaecat. Anim nulla excepteur exercitation minim veniam
-              excepteur mollit duis. Ex et nulla minim ex quis cupidatat dolor
-              laborum excepteur. Minim do nulla commodo occaecat labore dolor
-              sit id sit nostrud incididunt occaecat non. Exercitation
-              incididunt ex est veniam minim aliquip."{' '}
-            </i>
+            <i>"{sidebarContent.sideCard.quote}" </i>
             <br />
             <br />
-            <i> - Da Vinci</i>
+            <i> - {sidebarContent.sideCard.author}</i>
           </p>
         </Quote>
         <Divider />

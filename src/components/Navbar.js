@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import theme from '../styles/theme';
 import Logo from '../assets/LogoLarge';
 import LogoSmall from '../assets/LogoSmall';
-import { ExternalLink } from 'react-feather';
-
+import { StyledExternalLink } from '../App';
 
 const primaryColor = theme.palette.primary.main;
 const initialGray = theme.palette.gray.main;
@@ -51,10 +50,16 @@ const Link = styled.a`
   &:visited {
     color: inherit;
   }
-  /* &:hover {
-    color: ${primaryColor};
-  } */
 `;
+
+// const StyledExternalLink = styled(ExternalLink)`
+//   padding-left: 10px;
+//   width: 16px;
+//   height: 16px;
+//   &:visited {
+//     color: inherit;
+//   }
+// `;
 
 const Navbar = ({ contentConfig }) => {
   return (
@@ -80,6 +85,7 @@ const Navbar = ({ contentConfig }) => {
                 target={item.isExternal ? '_blank' : ''}
               >
                 {item.title}
+                {item.isExternal ? <StyledExternalLink /> : ' '}
               </Link>
             </LinkContainer>
           );
