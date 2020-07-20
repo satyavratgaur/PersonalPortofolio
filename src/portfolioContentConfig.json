@@ -8,28 +8,28 @@
       {
         "icon": "BookOpen",
         "title": "Overview",
-        "link": "#overview",
+        "link": "overview",
         "isExternal": false,
         "externalIcon": false
       },
       {
         "icon": "Award",
         "title": "Technologies",
-        "link": "#technologies",
+        "link": "technologies",
         "isExternal": false,
         "externalIcon": false
       },
       {
         "icon": "Work",
         "title": "Experience",
-        "link": "#experience",
+        "link": "experience",
         "isExternal": false,
         "externalIcon": false
       },
       {
         "icon": "Terminal",
         "title": "Projects",
-        "link": "#projects",
+        "link": "projects",
         "isExternal": false,
         "externalIcon": false
       },
@@ -91,8 +91,8 @@
       "hobbies": [
         {
           "id": 1,
-          "src":"{profilePhoto}",
-          "title":"title",
+          "src": "{profilePhoto}",
+          "title": "title",
           "heading": "heading",
           "subheading": "subheading",
           "content": "content"
@@ -107,6 +107,38 @@
       }
     ],
     "experience": [
+      {
+        "id": 1,
+        "headline": "Software Engineer,Select Portfolio Servicing",
+        "duration": "Jun-July 2020",
+        "description": "Exercitation proident nisi minim dolor cillum labore magna cupidatat aute exercitation adipisicing sint. Nisi anim nostrud incididunt labore aute ex et aliquip. Id eiusmod duis duis enim ullamco occaecat.",
+        "isExternal": true,
+        "link": "https://github.com/satyavratgaur"
+      },
+      {
+        "id": 1,
+        "headline": "Software Engineer,Select Portfolio Servicing",
+        "duration": "Jun-July 2020",
+        "description": "Exercitation proident nisi minim dolor cillum labore magna cupidatat aute exercitation adipisicing sint. Nisi anim nostrud incididunt labore aute ex et aliquip. Id eiusmod duis duis enim ullamco occaecat.",
+        "isExternal": true,
+        "link": "https://github.com/satyavratgaur"
+      },
+      {
+        "id": 1,
+        "headline": "Software Engineer,Select Portfolio Servicing",
+        "duration": "Jun-July 2020",
+        "description": "Exercitation proident nisi minim dolor cillum labore magna cupidatat aute exercitation adipisicing sint. Nisi anim nostrud incididunt labore aute ex et aliquip. Id eiusmod duis duis enim ullamco occaecat.",
+        "isExternal": true,
+        "link": "https://github.com/satyavratgaur"
+      },
+      {
+        "id": 1,
+        "headline": "Software Engineer,Select Portfolio Servicing",
+        "duration": "Jun-July 2020",
+        "description": "Exercitation proident nisi minim dolor cillum labore magna cupidatat aute exercitation adipisicing sint. Nisi anim nostrud incididunt labore aute ex et aliquip. Id eiusmod duis duis enim ullamco occaecat.",
+        "isExternal": true,
+        "link": "https://github.com/satyavratgaur"
+      },
       {
         "id": 1,
         "headline": "Software Engineer,Select Portfolio Servicing",
@@ -131,8 +163,8 @@
         "projectdescription": {
           "Title": "",
           "imageURL": "",
-          "content":"",
-          "isExternal":true,
+          "content": "",
+          "isExternal": true,
           "Link": ""
         }
       }

@@ -4,6 +4,7 @@ import Overview from '../components/Overview';
 import Technologies from '../components/Technologies';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const MainContentContainer = styled.div`
   padding: 16px;
@@ -17,10 +18,10 @@ const MainContent = ({ mainContent }) => {
     <MainContentContainer>
       <h1>{mainContent.overview.title}</h1>
       <b>{mainContent.overview.content}</b>
-      <Overview interests={mainContent.overview} />
-      <Technologies />
-      <Experience experience={mainContent.experience} />
-      <Projects />
+      <Overview name='overview' interests={mainContent.overview} />
+      <Technologies name='technologies' />
+      <Experience name='experience' experience={mainContent.experience} />
+      <Projects name='projects' />
     </MainContentContainer>
   );
 };

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import NavbarTabs from './components/NavbarTabs';
 import config from './portfolioContentConfig.json';
 import { ExternalLink } from 'react-feather';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 export const StyledExternalLink = styled(ExternalLink)`
   padding-left: 10px;
@@ -18,9 +19,11 @@ export const StyledExternalLink = styled(ExternalLink)`
 function App() {
   return (
     <div className='App'>
-      <Navbar contentConfig={config.navbar} />
-      {/* <NavbarTabs navbarContent={config.navbar}/> */}
-      <Home config={config} />
+      <Router>
+        <Navbar contentConfig={config.navbar} />
+        {/* <NavbarTabs navbarContent={config.navbar}/> */}
+        <Home config={config} />
+      </Router>
     </div>
   );
 }
