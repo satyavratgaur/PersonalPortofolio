@@ -19,11 +19,9 @@ export const StyledExternalLink = styled(ExternalLink)`
 function App() {
   return (
     <div className='App'>
-      <Router>
-        <Navbar contentConfig={config.navbar} />
-        {/* <NavbarTabs navbarContent={config.navbar}/> */}
-        <Home config={config} />
-      </Router>
+      <Navbar contentConfig={config.navbar} />
+      {/* <NavbarTabs navbarContent={config.navbar}/> */}
+      <Home config={config} />
     </div>
   );
 }

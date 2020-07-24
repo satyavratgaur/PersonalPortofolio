@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components';
 import { StyledExternalLink } from '../App';
 
@@ -32,9 +32,11 @@ const CardDate = styled.div`
   justify-content: flex-end;
 `;
 
-const Experience = ({ experience }) => {
+const Experience = ({ experience , exp }) => {
+  // const exp = useRef(null);
+
   return (
-    <ExperienceContainer>
+    <ExperienceContainer ref={exp}>
       <h2>Experience</h2>
       {experience.map((item) => {
         return (
