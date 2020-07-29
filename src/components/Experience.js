@@ -32,8 +32,7 @@ const CardDate = styled.div`
   justify-content: flex-end;
 `;
 
-const Experience = ({ experience , exp }) => {
-  // const exp = useRef(null);
+const Experience = React.forwardRef(({ experience , exp },ref) => {
 
   return (
     <ExperienceContainer ref={exp}>
@@ -71,6 +70,6 @@ const Experience = ({ experience , exp }) => {
       </Card>
     </ExperienceContainer>
   );
-};
+});
 
 export default Experience;
