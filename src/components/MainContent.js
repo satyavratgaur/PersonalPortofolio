@@ -37,7 +37,7 @@ const MainContent = ({ mainContent }) => {
       <h1>{mainContent.overview.title}</h1>
       <b>{mainContent.overview.content}</b>
       <Overview name='overview' interests={mainContent.overview} />
-      <Technologies name='technologies' />
+      <Technologies name='technologies' tech = {mainContent.technologies}/>
       <button onClick={scrollToTop}>Lets go to the top</button>
       <button onClick={goToOverview}>Lets go overview</button>
       <button onClick={goToExperience}>Lets go Experience</button>

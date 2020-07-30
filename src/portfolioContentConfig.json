@@ -104,6 +104,16 @@
         "id": 1,
         "stack": "ReactJS",
         "value": 80
+      },
+      {
+        "id": 1,
+        "stack": "ReactJS",
+        "value": 80
+      },
+      {
+        "id": 1,
+        "stack": "ReactJS",
+        "value": 80
       }
     ],
     "experience": [
@@ -111,7 +121,7 @@
         "id": 1,
         "headline": "Software Engineer,Select Portfolio Servicing",
         "duration": "Jun-July 2020",
-        "description": "Exercitation proident nisi minim dolor cillum labore magna cupidatat aute exercitation adipisicing sint. Nisi anim nostrud incididunt labore aute ex et aliquip. Id eiusmod duis duis enim ullamco occaecat.",
+        "description": "",
         "isExternal": true,
         "link": "https://github.com/satyavratgaur"
       },
