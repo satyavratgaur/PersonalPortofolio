@@ -119,43 +119,59 @@
     "experience": [
       {
         "id": 1,
-        "headline": "Software Engineer,Select Portfolio Servicing",
-        "duration": "Jun-July 2020",
+        "headline": "Infrastructure System Analyst, Select Portfolio Servicing",
+        "duration": "since July 2020",
         "description": "",
+        "isExternal": false,
+        "link": ""
+      },
+      {
+        "id": 1,
+        "headline": "Web Designer, Arizona State University",
+        "duration": "Jun-July 2020",
+        "description": "Designed the web application for Power Electronics and Control Engineering Lab at ASU using HTML, CSS and ReactJS. Implemented continuous deployment from Github using Netlify and included easy maintainability features like adaptive JSON-based rendering.",
+        "isExternal": true,
+        "link": "https://www.peacelab-asu.com/"
+      },
+      {
+        "id": 1,
+        "headline": "Graduate Teaching assistant, Arizona State University",
+        "duration": "September 2018 – May 2020",
+        "description": "Grading and reinforcing lessons for the courses - Programming with Python, Unix Utilities & Shell Scripting and Database. Management Systems. Worked closely with multiple professors for reviewing material for undergraduate courses of 40+ students.",
         "isExternal": true,
         "link": "https://github.com/satyavratgaur"
       },
       {
         "id": 1,
-        "headline": "Software Engineer,Select Portfolio Servicing",
-        "duration": "Jun-July 2020",
-        "description": "Exercitation proident nisi minim dolor cillum labore magna cupidatat aute exercitation adipisicing sint. Nisi anim nostrud incididunt labore aute ex et aliquip. Id eiusmod duis duis enim ullamco occaecat.",
+        "headline": "Software Engineer Intern, Select Portfolio Servicing",
+        "duration": "June - August 2019",
+        "description": "Designed and developed an end to end system for collecting load balanced server configurations from the in-house Data Center and checking it for inconsistencies. Utilized Windows PowerShell to create remotely executable scripts, interfaced with Citrix NetScaler Load Balancers using REST API’s and used SQL to store and detect misconfigurations",
         "isExternal": true,
         "link": "https://github.com/satyavratgaur"
       },
       {
         "id": 1,
-        "headline": "Software Engineer,Select Portfolio Servicing",
-        "duration": "Jun-July 2020",
-        "description": "Exercitation proident nisi minim dolor cillum labore magna cupidatat aute exercitation adipisicing sint. Nisi anim nostrud incididunt labore aute ex et aliquip. Id eiusmod duis duis enim ullamco occaecat.",
-        "isExternal": true,
-        "link": "https://github.com/satyavratgaur"
+        "headline": "Decision Analytics Associate at ZS Associates, Gurgaon, India",
+        "duration": "November 2017 - July 2018",
+        "description": "Involved in data analysis and forecasting on patient level data for Oncology(cancer) drugs for Pfizer. Utilized SQL and R for data extraction from Teradata and Aginity Servers and further used Advanced MS-Excel and Tableau for data visualization and reporting.",
+        "isExternal": false,
+        "link": ""
       },
       {
         "id": 1,
-        "headline": "Software Engineer,Select Portfolio Servicing",
-        "duration": "Jun-July 2020",
-        "description": "Exercitation proident nisi minim dolor cillum labore magna cupidatat aute exercitation adipisicing sint. Nisi anim nostrud incididunt labore aute ex et aliquip. Id eiusmod duis duis enim ullamco occaecat.",
-        "isExternal": true,
-        "link": "https://github.com/satyavratgaur"
+        "headline": "Patent Engineer Associate Intern at UnitedLex, Gurgaon, India",
+        "duration": "January - May 2017",
+        "description": "Conducted patentability searches for different ideas presented and documented by leading software companies and assessed the scope for new R&D opportunities. Utilized tools like Orbit intelligence, Google Patents and Google Scholar. Researched and published a blog on 5G technologies for a recognized technical website.",
+        "isExternal": false,
+        "link": ""
       },
       {
         "id": 1,
-        "headline": "Software Engineer,Select Portfolio Servicing",
-        "duration": "Jun-July 2020",
-        "description": "Exercitation proident nisi minim dolor cillum labore magna cupidatat aute exercitation adipisicing sint. Nisi anim nostrud incididunt labore aute ex et aliquip. Id eiusmod duis duis enim ullamco occaecat.",
-        "isExternal": true,
-        "link": "https://github.com/satyavratgaur"
+        "headline": "Software Development Intern at DRDO, New Delhi, India",
+        "duration": "June – July 2015",
+        "description": "Designed a software application for tectonic fault activity detection using exclusive satellite imagery using C++. Enabled cross-platform development by utilizing Qt. Application has witnessed significant usage in Research applications",
+        "isExternal": false,
+        "link": ""
       }
     ],
     "projects": [
