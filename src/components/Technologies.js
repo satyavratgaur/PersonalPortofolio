@@ -33,8 +33,8 @@ const ProgressBar = styled(LinearProgress)`
   height: 10px !important;
 `;
 
-const Technologies = ({tech}) => {
-  console.log(tech)
+const Technologies = ({ tech }) => {
+  console.log(tech);
   return (
     <TechnologiesContainer>
       <h2>Technologies</h2>
@@ -42,13 +42,15 @@ const Technologies = ({tech}) => {
         <TechName>React</TechName>
         <ProgressBar variant='determinate' value={80}></ProgressBar>
       </TechProgress>
-      {tech.map((item)=>{
-        return <TechProgress>
-        <TechName>{item.stack}</TechName>
-        <ProgressBar variant='determinate' value={item.value}></ProgressBar>
-      </TechProgress>
-      })};
-      
+      {tech.map((item) => {
+        return (
+          <TechProgress>
+            <TechName>{item.stack}</TechName>
+            <ProgressBar variant='determinate' value={item.value}></ProgressBar>
+          </TechProgress>
+        );
+      })}
+      ;
     </TechnologiesContainer>
   );
 };
