@@ -48,7 +48,7 @@ const MediaCard = ({ src, title, heading, subheading, content }) => {
 
 const Overview = ({ interests }) => {
   return (
-    <OverviewContainer>
+    <OverviewContainer id="overview">
       <MediaCard
         src={profilePhoto}
         title='Title'

@@ -36,7 +36,7 @@ const ProgressBar = styled(LinearProgress)`
 const Technologies = ({ tech }) => {
   console.log(tech);
   return (
-    <TechnologiesContainer>
+    <TechnologiesContainer id="technologies">
       <h2>Technologies</h2>
       <TechProgress>
         <TechName>React</TechName>

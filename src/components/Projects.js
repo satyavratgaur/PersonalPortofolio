@@ -89,7 +89,7 @@ const Projects = () => {
 
   return (
     <>
-      <h2>Projects</h2>
+      <h2 id="projects">Projects</h2>
       <Grid container justify='space-around'>
         <ProjectsContainer onClick={handleDialog}>
           <ProjectCard>

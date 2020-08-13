@@ -4,6 +4,9 @@ import theme from '../styles/theme';
 import Logo from '../assets/LogoLarge';
 import LogoSmall from '../assets/LogoSmall';
 import { StyledExternalLink } from '../App';
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
+// import { overview, goToOverview } from '../components/MainContent';
 
 const primaryColor = theme.palette.primary.main;
 const initialGray = theme.palette.gray.main;
@@ -30,7 +33,7 @@ const StyledLogo = styled(Logo)`
   }
 `;
 
-const LinkContainer = styled.div`
+const LinkContainer = styled(ScrollLink)`
   /* padding: 10px; */
   display: flex;
   align-items: center;
@@ -52,6 +55,8 @@ const Link = styled.a`
   }
 `;
 
+
+
 // const StyledExternalLink = styled(ExternalLink)`
 //   padding-left: 10px;
 //   width: 16px;
@@ -65,6 +70,7 @@ const Navbar = ({ contentConfig }) => {
   return (
     <NavbarContainer>
       <StyledLogo fill={initialGray} width={150} height={50} />
+      {/* <button onClick={goToOverview}>Lets go to the top</button> */}
       <NavbarLinks>
         {contentConfig.segmentLinks.map((item) => {
           //dynamic imports
@@ -77,7 +83,14 @@ const Navbar = ({ contentConfig }) => {
             }
           `;
           return (
-            <LinkContainer>
+            <LinkContainer
+            activeClass="active"
+            to="technologies"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            >
               <StyledLinkIcon fill={initialGray} width={20} height={20} />
               <Link
                 href={item.link}

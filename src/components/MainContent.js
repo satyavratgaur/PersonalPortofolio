@@ -12,6 +12,9 @@ const MainContentContainer = styled.div`
   margin: 0 auto;
 `;
 
+
+//const overview = React.createRef();
+
 const MainContent = ({ mainContent }) => {
   console.log(mainContent);
   const overview = useRef(null);
@@ -52,4 +55,5 @@ const MainContent = ({ mainContent }) => {
     </MainContentContainer>
   );
 };
+
 export default MainContent;

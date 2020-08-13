@@ -17,11 +17,15 @@ export const StyledExternalLink = styled(ExternalLink)`
 `;
 
 function App() {
+  // const goToOverview = () => {
+  //   console.log('How bout sum ovaview', overview);
+  //   window.scrollTo({ top: overview.current.offsetTop, behavior: 'smooth' });
+  // };
   return (
     <div className='App'>
       <Navbar contentConfig={config.navbar} />
       {/* <NavbarTabs navbarContent={config.navbar}/> */}
-      <Home config={config} />
+      <Home config={config}/>
     </div>
   );
 }

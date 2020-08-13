@@ -13,6 +13,7 @@
     "react-feather": "^2.0.8",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-scroll": "^1.8.1",
     "react-svg": "^11.0.29",
     "react-use": "^15.3.2",
     "styled-components": "^5.1.1",
