@@ -77,7 +77,7 @@ const DialogActions = styled(MuiDialogActions)`
   /* padding: ; */
 `;
 
-const Projects = () => {
+const Projects = ({projects}) => {
   const [open, setOpen] = React.useState(false);
 
   const handleDialog = () => {

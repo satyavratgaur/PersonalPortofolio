@@ -35,7 +35,7 @@ const CardDate = styled.div`
 const Experience = React.forwardRef(({ experience , exp },ref) => {
 
   return (
-    <ExperienceContainer ref={exp}>
+    <ExperienceContainer id="experience">
       <h2>Experience</h2>
       {experience.map((item) => {
         return (

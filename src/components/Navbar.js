@@ -85,7 +85,7 @@ const Navbar = ({ contentConfig }) => {
           return (
             <LinkContainer
             activeClass="active"
-            to="technologies"
+            to={item.link}
             spy={true}
             smooth={true}
             offset={-70}

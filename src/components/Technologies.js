@@ -50,7 +50,6 @@ const Technologies = ({ tech }) => {
           </TechProgress>
         );
       })}
-      ;
     </TechnologiesContainer>
   );
 };
