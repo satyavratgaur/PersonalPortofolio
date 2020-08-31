@@ -15,6 +15,7 @@ const TechProgress = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 10px 0 10px 0px;
 `;
 
 const TechName = styled.div`
@@ -36,7 +37,7 @@ const ProgressBar = styled(LinearProgress)`
 const Technologies = ({ tech }) => {
   console.log(tech);
   return (
-    <TechnologiesContainer id="technologies">
+    <TechnologiesContainer id='technologies'>
       <h2>Technologies</h2>
       <TechProgress>
         <TechName>React</TechName>

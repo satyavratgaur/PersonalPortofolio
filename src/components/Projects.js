@@ -77,7 +77,7 @@ const DialogActions = styled(MuiDialogActions)`
   /* padding: ; */
 `;
 
-const Projects = ({projects}) => {
+const Projects = ({ projects }) => {
   const [open, setOpen] = React.useState(false);
 
   const handleDialog = () => {
@@ -89,7 +89,7 @@ const Projects = ({projects}) => {
 
   return (
     <>
-      <h2 id="projects">Projects</h2>
+      <h2 id='projects'>Projects</h2>
       <Grid container justify='space-around'>
         <ProjectsContainer onClick={handleDialog}>
           <ProjectCard>
@@ -127,6 +127,48 @@ const Projects = ({projects}) => {
           </DialogActions>
         </Dialog>
       </Grid>
+
+      {projects.map((item) => {
+        return (
+          <Grid container justify='space-around'>
+            <ProjectsContainer onClick={handleDialog}>
+              <ProjectCard>
+                <ProjectHeadline>{item.headline}</ProjectHeadline>
+                <ProjectTags>
+                  {item.technologies.map((tech) => {
+                    return (
+                      <StyledChip
+                        variant='outlined'
+                        size='small'
+                        label={tech.stack}
+                      />
+                    );
+                  })}
+                </ProjectTags>
+              </ProjectCard>
+            </ProjectsContainer>
+            <Dialog
+              onClose={handleClose}
+              aria-labelledby='customized-dialog-title'
+              open={open}
+            >
+              <DialogTitle id='customized-dialog-title' onClose={handleClose}>
+                {item.projectDescription.Title}
+              </DialogTitle>
+              <DialogContent dividers>
+                {item.projectDescription.content.map((proj) => {
+                  return <p>{proj.para}</p>;
+                })}
+              </DialogContent>
+              <DialogActions>
+                <Button autoFocus onClick={handleClose} color='primary'>
+                  Close
+                </Button>
+              </DialogActions>
+            </Dialog>
+          </Grid>
+        );
+      })}
     </>
   );
 };

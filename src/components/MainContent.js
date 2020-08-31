@@ -49,7 +49,7 @@ const MainContent = ({ mainContent }) => {
         experience={mainContent.experience}
         // exp={exp}
       />
-      <Projects name='projects' />
+      <Projects name='projects' projects = {mainContent.projects}/>
     </MainContentContainer>
   )
 }

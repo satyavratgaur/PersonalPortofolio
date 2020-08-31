@@ -103,17 +103,42 @@
       {
         "id": 1,
         "stack": "ReactJS",
+        "value": 85
+      },
+      {
+        "id": 2,
+        "stack": "Python",
         "value": 80
       },
       {
-        "id": 1,
-        "stack": "ReactJS",
+        "id": 3,
+        "stack": "C++",
+        "value": 70
+      },
+      {
+        "id": 4,
+        "stack": "HTML/CSS",
+        "value": 75
+      },
+      {
+        "id": 5,
+        "stack": "PowerShell",
+        "value": 85
+      },
+      {
+        "id": 6,
+        "stack": "AWS",
+        "value": 70
+      },
+      {
+        "id": 7,
+        "stack": "SQL",
         "value": 80
       },
       {
-        "id": 1,
-        "stack": "ReactJS",
-        "value": 80
+        "id": 8,
+        "stack": "NoSQL",
+        "value": 70
       }
     ],
     "experience": [
@@ -177,20 +202,33 @@
     "projects": [
       {
         "id": "",
-        "headline": "",
+        "headline": "Handwritten Digit Recognition using CNN",
         "technologies": [
           {
-            "stack": ""
+            "stack": "Python TensorFlow"
           },
           {
-            "stack": ""
+            "stack": "Machine Learning"
+          },
+          {
+            "stack": "Deep Learning"
+          },
+          {
+            "stack": "Convolutional Neural Networks"
           }
         ],
-        "projectdescription": {
-          "Title": "",
-          "imageURL": "",
-          "content": "",
-          "isExternal": true,
+        "projectDescription": {
+          "Title": "Handwriting Detection",
+          "imageURL": "handwriting_detection.png",
+          "content": [
+            {
+              "para": "Developed a Deep Learning - Convolutional Neural Network(CNN) to recognize handwritten numbers with ~99% accuracy. Utilized Python TensorFlow and MNIST’s handwritten digit database of 60,000 training images and 10,000 testing images."
+            },
+            {
+              "para": "Developed a Deep Learning - Convolutional Neural Network(CNN) to recognize handwritten numbers with ~99% accuracy. Utilized Python TensorFlow and MNIST’s handwritten digit database of 60,000 training images and 10,000 testing images."
+            }
+          ],
+          "isExternal": false,
           "Link": ""
         }
       }
