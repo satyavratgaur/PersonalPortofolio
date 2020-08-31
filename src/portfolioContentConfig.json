@@ -80,18 +80,18 @@
       }
     ],
     "sideCard": {
-      "quote": "Think deeply about things. Don’t just go along because that’s the way things are or that’s what your friends say. Consider the effects, consider the alternatives, but most importantly, just think.",
+      "quote": "“Be curious. Read widely. Try new things. What people say intelligence just boils down to curiosity.”",
       "author": "Aaron Swartz"
     }
   },
   "mainContent": {
     "overview": {
       "title": "Hello",
-      "content": "I am Satyavrat",
+      "content": "I am Satyavrat. I love to code and create things from scratch. I live in Salt Lake City, Utah.",
       "hobbies": [
         {
           "id": 1,
-          "src": "{profilePhoto}",
+          "src": "universal_photo.jpg",
           "title": "title",
           "heading": "heading",
           "subheading": "subheading",

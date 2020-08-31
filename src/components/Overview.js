@@ -46,9 +46,29 @@ const MediaCard = ({ src, title, heading, subheading, content }) => {
   );
 };
 
+// const loadImage = imageName => {
+//   import(`./assets/${imageName}.jpg`).then(image => {
+//     this.setState({
+//       image
+//     });
+//   });
+// };
+
+const loadImage = (r) => {
+  let images = {};
+  r.keys().map((item, index) => {
+    images[item.replace('./', '')] = r(item);
+  });
+  return images;
+};
+
+const images = loadImage(
+  require.context('../assets/', false, /\.(png|jpe?g|svg)$/)
+);
+
 const Overview = ({ interests }) => {
   return (
-    <OverviewContainer id="overview">
+    <OverviewContainer id='overview'>
       <MediaCard
         src={profilePhoto}
         title='Title'
@@ -57,9 +77,15 @@ const Overview = ({ interests }) => {
         content='This is the content for the card'
       />
       {interests.hobbies.map((item) => {
+        // let img = images('../../assets/' + item.src);
+        // const images = require.context(`${img}`, true);
+        // const { image } = this.state;
+
+        // let img = '../assets/' + item.src + '.jpg';
+
         return (
           <MediaCard
-            src={item.src}
+            src={images[item.src]}
             title={item.title}
             heading={item.heading}
             subheading={item.subheading}
