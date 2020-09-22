@@ -12,8 +12,7 @@ import MuiDialogActions from '@material-ui/core/DialogActions';
 const primaryColor = theme.palette.primary.main;
 const initialGray = theme.palette.gray.main;
 
-const ProjectsContainer = styled(Grid)`
-`;
+const ProjectsContainer = styled(Grid)``;
 
 const ProjectCard = styled.div`
   display: flex;
@@ -166,7 +165,10 @@ const Projects = ({ projects }) => {
                   {selectedPost.projectDescription.Title}
                 </DialogTitle>
                 <DialogContent dividers>
-                  <pre>{JSON.stringify(selectedPost, null, 2)}</pre>
+                  {selectedPost.projectDescription.content.map((elem) => {
+                    return <p>{elem.para}</p>;
+                  })}
+                  {/* <pre>{JSON.stringify(selectedPost, null, 2)}</pre> */}
                 </DialogContent>
                 <DialogActions>
                   <Button autoFocus onClick={handleClose} color='primary'>
