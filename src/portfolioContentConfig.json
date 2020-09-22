@@ -201,7 +201,7 @@
     ],
     "projects": [
       {
-        "id": "",
+        "id": "handwritten-digit",
         "headline": "Handwritten Digit Recognition using CNN",
         "technologies": [
           {
@@ -226,6 +226,35 @@
             },
             {
               "para": "Developed a Deep Learning - Convolutional Neural Network(CNN) to recognize handwritten numbers with ~99% accuracy. Utilized Python TensorFlow and MNIST’s handwritten digit database of 60,000 training images and 10,000 testing images."
+            }
+          ],
+          "isExternal": false,
+          "Link": ""
+        }
+      },
+      {
+        "id": "handigit",
+        "headline": "Handwritten Digit Recognition using CNN",
+        "technologies": [
+          {
+            "stack": "Python TensorFlow"
+          },
+          {
+            "stack": "Machine Learning"
+          },
+          {
+            "stack": "Deep Learning"
+          }
+        ],
+        "projectDescription": {
+          "Title": "Look at this",
+          "imageURL": "handwriting_detection.png",
+          "content": [
+            {
+              "para": "Developed a Deep Learning - Convolutional Neural Network(CNN) to recognize handwritten numbers with ~99% accuracy. Utilized Python TensorFlow and MNIST’s handwritten digit database of 60,000 training images and 10,000 testing images."
+            },
+            {
+              "para": "Heyyyyyyyyyyyyyyy"
             }
           ],
           "isExternal": false,

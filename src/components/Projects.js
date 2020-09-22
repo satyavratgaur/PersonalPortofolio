@@ -12,7 +12,8 @@ import MuiDialogActions from '@material-ui/core/DialogActions';
 const primaryColor = theme.palette.primary.main;
 const initialGray = theme.palette.gray.main;
 
-const ProjectsContainer = styled(Grid)``;
+const ProjectsContainer = styled(Grid)`
+`;
 
 const ProjectCard = styled.div`
   display: flex;
@@ -21,6 +22,10 @@ const ProjectCard = styled.div`
   padding: 24px;
   border: 1px solid #d7d7d7;
   border-radius: 12px;
+  &:hover {
+    background-color: #f6f6f6;
+    cursor: pointer;
+  }
 `;
 
 const ProjectHeadline = styled.div`
@@ -79,9 +84,11 @@ const DialogActions = styled(MuiDialogActions)`
 
 const Projects = ({ projects }) => {
   const [open, setOpen] = React.useState(false);
+  const [selectedPost, setSelectedPost] = React.useState(null);
 
-  const handleDialog = () => {
+  const handleDialog = (i) => {
     setOpen(true);
+    setSelectedPost(i);
   };
   const handleClose = () => {
     setOpen(false);
@@ -90,8 +97,8 @@ const Projects = ({ projects }) => {
   return (
     <>
       <h2 id='projects'>Projects</h2>
-      <Grid container justify='space-around'>
-        <ProjectsContainer onClick={handleDialog}>
+      {/* <Grid container justify='space-around'>
+        <ProjectsContainer onClick={()=>handleDialog}>
           <ProjectCard>
             <ProjectHeadline>Project Headline</ProjectHeadline>
             <ProjectTags>
@@ -106,6 +113,7 @@ const Projects = ({ projects }) => {
           onClose={handleClose}
           aria-labelledby='customized-dialog-title'
           open={open}
+          selectedPost={selectedPost}
         >
           <DialogTitle id='customized-dialog-title' onClose={handleClose}>
             Project Headline for the Project
@@ -126,12 +134,13 @@ const Projects = ({ projects }) => {
             </Button>
           </DialogActions>
         </Dialog>
-      </Grid>
+      </Grid> */}
 
       {projects.map((item) => {
+        console.log(item);
         return (
           <Grid container justify='space-around'>
-            <ProjectsContainer onClick={handleDialog}>
+            <ProjectsContainer onClick={() => handleDialog(item)}>
               <ProjectCard>
                 <ProjectHeadline>{item.headline}</ProjectHeadline>
                 <ProjectTags>
@@ -147,25 +156,25 @@ const Projects = ({ projects }) => {
                 </ProjectTags>
               </ProjectCard>
             </ProjectsContainer>
-            <Dialog
-              onClose={handleClose}
-              aria-labelledby='customized-dialog-title'
-              open={open}
-            >
-              <DialogTitle id='customized-dialog-title' onClose={handleClose}>
-                {item.projectDescription.Title}
-              </DialogTitle>
-              <DialogContent dividers>
-                {item.projectDescription.content.map((proj) => {
-                  return <p>{proj.para}</p>;
-                })}
-              </DialogContent>
-              <DialogActions>
-                <Button autoFocus onClick={handleClose} color='primary'>
-                  Close
-                </Button>
-              </DialogActions>
-            </Dialog>
+            {open && (
+              <Dialog
+                onClose={handleClose}
+                aria-labelledby={selectedPost.id}
+                open={open}
+              >
+                <DialogTitle id={selectedPost} onClose={handleClose}>
+                  {selectedPost.projectDescription.Title}
+                </DialogTitle>
+                <DialogContent dividers>
+                  <pre>{JSON.stringify(selectedPost, null, 2)}</pre>
+                </DialogContent>
+                <DialogActions>
+                  <Button autoFocus onClick={handleClose} color='primary'>
+                    Close
+                  </Button>
+                </DialogActions>
+              </Dialog>
+            )}
           </Grid>
         );
       })}
