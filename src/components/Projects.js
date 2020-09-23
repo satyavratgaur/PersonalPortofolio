@@ -12,6 +12,18 @@ import MuiDialogActions from '@material-ui/core/DialogActions';
 const primaryColor = theme.palette.primary.main;
 const initialGray = theme.palette.gray.main;
 
+const loadImage = (r) => {
+  let images = {};
+  r.keys().map((item, index) => {
+    images[item.replace('./', '')] = r(item);
+  });
+  return images;
+};
+
+const images = loadImage(
+  require.context('../assets/', false, /\.(png|jpe?g|svg)$/)
+);
+
 const ProjectsContainer = styled(Grid)``;
 
 const ProjectCard = styled.div`
@@ -79,6 +91,11 @@ const DialogContent = styled(MuiDialogContent)`
 const DialogActions = styled(MuiDialogActions)`
   margin: 0;
   /* padding: ; */
+`;
+
+const CardImage = styled.img`
+  width: 75%;
+  border-radius: 12px;
 `;
 
 const Projects = ({ projects }) => {
@@ -165,6 +182,10 @@ const Projects = ({ projects }) => {
                   {selectedPost.projectDescription.Title}
                 </DialogTitle>
                 <DialogContent dividers>
+                  <CardImage
+                    src={images[selectedPost.projectDescription.imageURL]}
+                    title={selectedPost.projectDescription.Title}
+                  />
                   {selectedPost.projectDescription.content.map((elem) => {
                     return <p>{elem.para}</p>;
                   })}

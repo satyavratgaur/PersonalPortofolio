@@ -254,7 +254,7 @@
         ],
         "projectDescription": {
           "Title": "Handwritten Digit Recognition using CNN",
-          "imageURL": "handwriting_detection.png",
+          "imageURL": "handwritingDetection.png",
           "content": [
             {
               "para": "Developed a Deep Learning - Convolutional Neural Network(CNN) to recognize handwritten numbers with ~99% accuracy."
@@ -264,6 +264,41 @@
             },
             {
               "para": "Made use of the Rectified Linear Unit(RELU) function and Adam Optimizer to improve predictions"
+            }
+          ],
+          "isExternal": false,
+          "Link": ""
+        }
+      },
+      {
+        "id": "homomorphicEncryption",
+        "headline": "Fully Homomorphic Encryption",
+        "technologies": [
+          {
+            "stack": "Encryption"
+          },
+          {
+            "stack": "AWS"
+          },
+          {
+            "stack": "Fog computing"
+          },
+          {
+            "stack": "Internet of Things (IoT)"
+          }
+        ],
+        "projectDescription": {
+          "Title": "Fully Homomorphic Encryption based computation of cholesterol risk",
+          "imageURL": "",
+          "content": [
+            {
+              "para": "Performed a Fully Homomorphic based computation of the heart disease risk given the cholesterol using a fog node."
+            },
+            {
+              "para": "Computations are performed using a fog node with Amazon S3 bucket for cloud data storage"
+            },
+            {
+              "para": "The process aims at developing an environment where a patient may be able to confidentially evaluate his/her Cholestrol risk where the details are encrypted at all times"
             }
           ],
           "isExternal": false,
