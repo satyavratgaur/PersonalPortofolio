@@ -57,17 +57,6 @@ const Experience = React.forwardRef(({ experience , exp },ref) => {
           </Card>
         );
       })}
-      <Card>
-        <CardHeader>
-          <ExperienceHeadline>Select Portfolio Servicing</ExperienceHeadline>
-          <CardDate>Jun-July 2020</CardDate>
-        </CardHeader>
-        <p>
-          Exercitation proident nisi minim dolor cillum labore magna cupidatat
-          aute exercitation adipisicing sint. Nisi anim nostrud incididunt
-          labore aute ex et aliquip. Id eiusmod duis duis enim ullamco occaecat.
-        </p>
-      </Card>
     </ExperienceContainer>
   );
 });
