@@ -304,6 +304,82 @@
           "isExternal": false,
           "Link": ""
         }
+      },
+      {
+        "id": "ArApp",
+        "headline": "City Vision - 3D AR",
+        "technologies": [
+          {
+            "stack": "Augmented Reality"
+          },
+          {
+            "stack": "Unity"
+          },
+          {
+            "stack": "Blender"
+          },
+          {
+            "stack": "Android"
+          }
+        ],
+        "projectDescription": {
+          "Title": "City Vision - 3D Augmented Reality Application",
+          "imageURL": "",
+          "content": [
+            {
+              "para": "Designed an Augmented Reality Android application for city planning using live maps and location data"
+            },
+            {
+              "para": "Inspired by densely populated cities like Hong Kong where the real estate can be managed better. The intent is to help better plan new cities by mapping them out on a real time map"
+            },
+            {
+              "para": "Used Blender to create features like buildings, skyscrapers and gas stations. Utilized Mapbox in Unity to provide real time maps"
+            },
+            {
+              "para": "A user can place buildings on the map and plan out cities better"
+            }
+          ],
+          "isExternal": false,
+          "Link": ""
+        }
+      },
+      {
+        "id": "RDMVS",
+        "headline": "Research Data Management and Visualization System",
+        "technologies": [
+          {
+            "stack": "Web Application"
+          },
+          {
+            "stack": "Python Django"
+          },
+          {
+            "stack": "SQL"
+          },
+          {
+            "stack": "AWS"
+          }
+        ],
+        "projectDescription": {
+          "Title": "Research Data Management and Visualization System",
+          "imageURL": "RDMVS.png",
+          "content": [
+            {
+              "para": "Designed a website for retrieval, consolidation and visualization of photovoltaic efficiency research data in a team of 4 members."
+            },
+            {
+              "para": "It is a web platform which will enable clients to create & manage accounts, upload and consolidate data, and visualize their research data through charts, graphs and plot lines"
+            },
+            {
+              "para": "It solves the challenge to consolidate research data collected from different manual sources and represent it "
+            },
+            {
+              "para": "Technologies employed are Python - Django(back-end), Angular JS (front end), AWS-S3 and Google charts."
+            }
+          ],
+          "isExternal": false,
+          "Link": ""
+        }
       }
     ]
   }
