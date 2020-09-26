@@ -184,10 +184,10 @@ const Sidebar = ({ sidebarContent }) => {
           </p>
         </Quote>
         <Divider />
-        <SideCardBottom flexdir='column'>
+        {/* <SideCardBottom flexdir='column'>
           <p>"If you want to write more stuff"</p>
           <p>"If you want to write more stuff"</p>
-        </SideCardBottom>
+        </SideCardBottom> */}
       </SideCard>
     </SidebarContainer>
   );

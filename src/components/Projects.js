@@ -24,7 +24,9 @@ const images = loadImage(
   require.context('../assets/', false, /\.(png|jpe?g|svg)$/)
 );
 
-const ProjectsContainer = styled(Grid)``;
+const ProjectsContainer = styled(Grid)`
+  width: 100%;
+`;
 
 const ProjectCard = styled.div`
   display: flex;
@@ -155,7 +157,7 @@ const Projects = ({ projects }) => {
       {projects.map((item) => {
         console.log(item);
         return (
-          <Grid container justify='space-around'>
+          <Grid container justify='space-around' width='100%'>
             <ProjectsContainer onClick={() => handleDialog(item)}>
               <ProjectCard>
                 <ProjectHeadline>{item.headline}</ProjectHeadline>
