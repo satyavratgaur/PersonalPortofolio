@@ -144,7 +144,7 @@
     "experience": [
       {
         "id": 1,
-        "headline": "Infrastructure System Analyst, Select Portfolio Servicing",
+        "headline": "Software Infrastructure Engineer, Select Portfolio Servicing",
         "duration": "since July 2020",
         "description": "I work on designing scripts that explore the data center infrastructure of my company and fish for discrepancies that may create problems for over a million loans that are serviced by my company. I work on Windows PowerShell and SQL to interface and do quick compares within the infrastructure.",
         "isExternal": false,
@@ -219,7 +219,7 @@
         ],
         "projectDescription": {
           "Title": "Credit Card Delinquency Prediction",
-          "imageURL": "handwriting_detection.png",
+          "imageURL": "CreditCardDel.png",
           "content": [
             {
               "para": "Utilized four different kinds of classifiers - Logistic Regression, K Nearest Neighbors, Decision Trees and Random Forests to predict Credit Card Delinquents in a dataset"
@@ -228,7 +228,7 @@
               "para": "The project involved the use of a skewed dataset and refining it by undersampling using dimensionality reduction"
             },
             {
-              "para": "Achieved Delinquency prediction using ~94% accuracy"
+              "para": "Achieved Delinquency prediction with ~94% accuracy. Undersampled dataset successfully to yield delinquency prediction of ~70%"
             }
           ],
           "isExternal": false,
@@ -289,7 +289,7 @@
         ],
         "projectDescription": {
           "Title": "Fully Homomorphic Encryption based computation of cholesterol risk",
-          "imageURL": "",
+          "imageURL": "HomomorphicEncryption.png",
           "content": [
             {
               "para": "Performed a Fully Homomorphic based computation of the heart disease risk given the cholesterol using a fog node."
@@ -324,7 +324,7 @@
         ],
         "projectDescription": {
           "Title": "City Vision - 3D Augmented Reality Application",
-          "imageURL": "",
+          "imageURL": "CityVision.png",
           "content": [
             {
               "para": "Designed an Augmented Reality Android application for city planning using live maps and location data"

@@ -39,10 +39,6 @@ const Technologies = ({ tech }) => {
   return (
     <TechnologiesContainer id='technologies'>
       <h2>Technologies</h2>
-      <TechProgress>
-        <TechName>React</TechName>
-        <ProgressBar variant='determinate' value={80}></ProgressBar>
-      </TechProgress>
       {tech.map((item) => {
         return (
           <TechProgress>
