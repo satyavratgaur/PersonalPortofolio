@@ -86,8 +86,8 @@
   },
   "mainContent": {
     "overview": {
-      "title": "Hello World",
-      "content": "I am Satyavrat. I love to code and create things from scratch. I live in Salt Lake City, Utah.",
+      "title": "Hello world,",
+      "content": "I am a software guy who breathes in all aspects of building useful code. I love to tinker around with programming languages and create things from scratch. I live in Salt Lake City, Utah.",
       "hobbies": [
         {
           "id": 1,
@@ -146,7 +146,7 @@
         "id": 1,
         "headline": "Software Infrastructure Engineer, Select Portfolio Servicing",
         "duration": "since July 2020",
-        "description": "I work on designing scripts that explore the data center infrastructure of my company and fish for discrepancies that may create problems for over a million loans that are serviced by my company. I work on Windows PowerShell and SQL to interface and do quick compares within the infrastructure.",
+        "description": "I have been working on designing applications that explore the data center infrastructure of my company and fish for discrepancies that may create problems for over a million loans that are serviced by my company. I work on Windows PowerShell, Python, PowerBI and SQL to interface with the entire ecosytem and find and represent irregularities that might be causing things to break",
         "isExternal": false,
         "link": ""
       },
@@ -154,7 +154,7 @@
         "id": 2,
         "headline": "Web Designer, Arizona State University",
         "duration": "February 2020 - May 2020",
-        "description": "Designed the web application for Power Electronics and Control Engineering Lab at ASU using HTML, CSS and ReactJS. Implemented continuous deployment from Github using Netlify and included easy maintainability features like adaptive JSON-based rendering.",
+        "description": "I designed the web application for Power Electronics and Control Engineering Lab at ASU using HTML, CSS and ReactJS. I implemented continuous deployment from Github using Netlify and included easy maintainability features like adaptive JSON-based rendering.",
         "isExternal": true,
         "link": "https://www.peacelab-asu.com/"
       },
@@ -162,7 +162,7 @@
         "id": 3,
         "headline": "Graduate Teaching assistant, Arizona State University",
         "duration": "September 2018 – May 2020",
-        "description": "Grading and reinforcing lessons for the courses - Programming with Python, Unix Utilities & Shell Scripting and Database. Management Systems. Worked closely with multiple professors for reviewing material for undergraduate courses of 40+ students.",
+        "description": "I was working part-time - grading and reinforcing lessons for the courses - Python, Unix Utilities & Shell Scripting and Database Management Systems. I worked closely with multiple professors for reviewing material for undergraduate classes of 40+ students.",
         "isExternal": false,
         "link": ""
       },
