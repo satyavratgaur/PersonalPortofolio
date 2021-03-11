@@ -14,6 +14,7 @@ const initialGray = theme.palette.gray.main;
 const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content:center;
   padding: 32px;
 `;
 
@@ -22,6 +23,10 @@ const NavbarLinks = styled.div`
   justify-content: space-around;
   align-items: center;
   flex: 3;
+
+  @media only screen and (max-width:768px){
+    display: none
+  }
 `;
 
 const StyledLogo = styled(Logo)`
@@ -69,7 +74,9 @@ const Link = styled.a`
 const Navbar = ({ contentConfig }) => {
   return (
     <NavbarContainer>
+      <a href='/'>
       <StyledLogo fill={initialGray} width={150} height={50} />
+      </a>
       {/* <button onClick={goToOverview}>Lets go to the top</button> */}
       <NavbarLinks>
         {contentConfig.segmentLinks.map((item) => {
