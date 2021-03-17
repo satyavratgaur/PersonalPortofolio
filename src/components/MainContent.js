@@ -15,7 +15,7 @@ const MainContentContainer = styled.div`
 //const overview = React.createRef();
 
 const MainContent = ({ mainContent }) => {
-  console.log(mainContent);
+  // console.log(mainContent);
   // const overview = useRef(null);
   // const exp = useRef(null);
 

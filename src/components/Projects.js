@@ -43,6 +43,7 @@ const ProjectCard = styled.div`
 
 const ProjectHeadline = styled.div`
   display: flex;
+  text-align: center;
   padding: 12px;
   flex: 1;
   font-size: 24px;
@@ -50,7 +51,8 @@ const ProjectHeadline = styled.div`
 `;
 
 const ProjectTags = styled.div`
-  display: flex;
+  display: block;
+  text-align: -webkit-center;
   flex: 1;
   font-size: 24px;
   align-self: center;
@@ -155,7 +157,6 @@ const Projects = ({ projects }) => {
       </Grid> */}
 
       {projects.map((item) => {
-        console.log(item);
         return (
           <Grid container justify='space-around' width='100%'>
             <ProjectsContainer onClick={() => handleDialog(item)}>

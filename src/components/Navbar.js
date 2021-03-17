@@ -4,7 +4,8 @@ import theme from '../styles/theme';
 import Logo from '../assets/LogoLarge';
 import LogoSmall from '../assets/LogoSmall';
 import { StyledExternalLink } from '../App';
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink} from "react-scroll";
+import { FaBars } from 'react-icons/fa';
 
 // import { overview, goToOverview } from '../components/MainContent';
 
@@ -60,7 +61,26 @@ const Link = styled.a`
   }
 `;
 
+const BurgerIcon = styled.div`
+  display: none;
 
+  @media screen and (max-width: 768px) {
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   transform: translate(-100%,75%);
+   font-size: 1.8rem;
+   cursor: pointer;
+ }
+`
+
+const Bars = styled(FaBars)`
+ color: ${initialGray};
+ &:hover {
+    color: ${primaryColor};
+  }
+`
 
 // const StyledExternalLink = styled(ExternalLink)`
 //   padding-left: 10px;
@@ -71,13 +91,16 @@ const Link = styled.a`
 //   }
 // `;
 
-const Navbar = ({ contentConfig }) => {
+const Navbar = ({ contentConfig, toggle }) => {
   return (
     <NavbarContainer>
       <a href='/'>
       <StyledLogo fill={initialGray} width={150} height={50} />
       </a>
       {/* <button onClick={goToOverview}>Lets go to the top</button> */}
+      <BurgerIcon onClick={toggle}>
+        <Bars />
+      </BurgerIcon>
       <NavbarLinks>
         {contentConfig.segmentLinks.map((item) => {
           //dynamic imports
