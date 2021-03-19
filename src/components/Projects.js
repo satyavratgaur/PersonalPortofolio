@@ -2,15 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
 import Chip from '@material-ui/core/Chip';
-import { Paper } from '@material-ui/core';
 import theme from '../styles/theme';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
-import { borders } from '@material-ui/system';
-import { makeStyles } from '@material-ui/core/styles';
 
 const primaryColor = theme.palette.primary.main;
 const initialGray = theme.palette.gray.main;
@@ -42,7 +39,7 @@ const ProjectCard = styled.div`
     background-color: #f6f6f6;
     cursor: pointer;
   }
-  box-shadow:2px 2px 2px 2px #ccc;
+  box-shadow:1px 1px 1px 1px #ccc;
 `;
 
 const ProjectHeadline = styled.div`
@@ -74,24 +71,6 @@ const StyledChip = styled(Chip)`
 // const DialogOpen = styled(Dialog)``;
 
 const DialogTitle = styled(MuiDialogTitle)``;
-
-// const DialogTitle1 = withStyles(styles)((props) => {
-//   const { children, classes, onClose, ...other } = props;
-//   return (
-//     <MuiDialogTitle disableTypography className={classes.root} {...other}>
-//       <Typography variant='h6'>{children}</Typography>
-//       {onClose ? (
-//         <IconButton
-//           aria-label='close'
-//           className={classes.closeButton}
-//           onClick={onClose}
-//         >
-//           <CloseIcon />
-//         </IconButton>
-//       ) : null}
-//     </MuiDialogTitle>
-//   );
-// });
 
 const DialogContent = styled(MuiDialogContent)`
   /* padding: ; */
