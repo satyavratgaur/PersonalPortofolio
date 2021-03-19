@@ -71,10 +71,10 @@
         "externalIcon": false
       },
       {
-        "icon": "Instagram",
-        "text": "@satyavratgaur",
-        "link": "https://www.instagram.com/satyavratgaur/",
-        "socialMediabg": "#C13584",
+        "icon": "Twitter",
+        "text": "/SatyavratDev",
+        "link": "https://twitter.com/SatyavratDev",
+        "socialMediabg": "#00ACEE",
         "isExternal": true,
         "externalIcon": false
       }

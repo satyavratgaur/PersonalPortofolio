@@ -17,6 +17,10 @@ const NavbarContainer = styled.div`
   align-items: center;
   justify-content:center;
   padding: 32px;
+  position: sticky;
+  top: 0px;
+  background: white;
+  z-index: 3;
 `;
 
 const NavbarLinks = styled.div`

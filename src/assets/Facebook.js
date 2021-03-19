@@ -7,7 +7,7 @@ function Icon(props) {
       width='34'
       height='34'
       fill='none'
-      viewBox='0 0 34 34'
+      viewBox='0 0 37 37'
       {...props}
     >
       <g filter='url(#filter0_i)'>

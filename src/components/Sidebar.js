@@ -34,6 +34,10 @@ const Link = styled.a`
   }
 `;
 
+const SocialMediaLink = styled.a`
+  text-decoration: none;
+`;
+
 const SideCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -138,16 +142,18 @@ const Sidebar = ({ sidebarContent }) => {
           }
         `;
         return (
-          <SocialMediaContainer>
-            <StyledLinkIcon fill={initialGray} />
-            <Link
-              href={item.link}
-              key={item.title}
-              target={item.isExternal ? '_blank' : ''}
-            >
-              {item.text}
-            </Link>
-          </SocialMediaContainer>
+          <SocialMediaLink href={item.link}>
+            <SocialMediaContainer>
+              <StyledLinkIcon fill={initialGray} />
+              <Link
+                href={item.link}
+                key={item.title}
+                target={item.isExternal ? '_blank' : ''}
+              >
+                {item.text}
+              </Link>
+            </SocialMediaContainer>
+          </SocialMediaLink>
         );
       })}
 
