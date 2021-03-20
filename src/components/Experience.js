@@ -23,6 +23,7 @@ const ExperienceHeadline = styled.div`
   flex: 2;
   font-size: 20px;
   font-weight: bold;
+  padding-right: 5px;
 `;
 
 const CardDate = styled.div`
@@ -30,6 +31,7 @@ const CardDate = styled.div`
   flex: 1;
   font-weight: bold;
   justify-content: flex-end;
+  padding-left: 5px;
 `;
 
 const Experience = React.forwardRef(({ experience , exp },ref) => {
