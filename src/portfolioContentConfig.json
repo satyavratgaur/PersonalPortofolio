@@ -87,7 +87,7 @@
   "mainContent": {
     "overview": {
       "title": "Hello world,",
-      "content": "I am a software guy who breathes in all aspects of building useful code. I love to tinker around with programming languages and create things from scratch. I live in Salt Lake City, Utah.",
+      "content": "I am a software guy who breathes in all aspects of building useful code. I love to tinker around with programming languages and create things from scratch. I live in SF Bay Area",
       "hobbies": [
         {
           "id": 1,
@@ -104,6 +104,16 @@
         "id": 1,
         "stack": "ReactJS",
         "value": 85
+      },
+      {
+        "id": 9,
+        "stack": "NextJS",
+        "value": 60
+      },
+      {
+        "id": 11,
+        "stack": "ASP .NET",
+        "value": 60
       },
       {
         "id": 2,
@@ -128,7 +138,12 @@
       {
         "id": 6,
         "stack": "AWS",
-        "value": 70
+        "value": 60
+      },
+      {
+        "id": 6,
+        "stack": "AWS",
+        "value": 80
       },
       {
         "id": 7,
