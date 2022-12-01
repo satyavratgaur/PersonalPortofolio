@@ -15,43 +15,15 @@ const MainContentContainer = styled.div`
 //const overview = React.createRef();
 
 const MainContent = ({ mainContent }) => {
-  // console.log(mainContent);
-  // const overview = useRef(null);
-  // const exp = useRef(null);
-
-  // const scrollToTop = ({ loc } = { top: 0 }) =>
-  //   window.scrollTo({ top: 0, behavior: 'smooth' });
-
-  // const goToOverview = () => {
-  //   console.log('How bout sum ovaview', overview);
-  //   window.scrollTo({ top: overview.current.offsetTop, behavior: 'smooth' });
-  // };
-  // const goToExperience = () => {
-  //   console.log('How bout sum exp', exp);
-  //   window.scrollTo({ top: exp.current.offsetTop, behavior: 'smooth' });
-  // };
-
-  // console.log('How bout overview', overview);
-  // console.log('Experience', exp);
-  // console.log(useRef({0,top}));
   return (
     <MainContentContainer>
       <h1>{mainContent.overview.title}</h1>
       <b>{mainContent.overview.content}</b>
-      {/*Adding Overview content*/}
-      {/* <Overview name='overview' interests={mainContent.overview} /> */}
-      {/* <button onClick={scrollToTop}>Lets go to the top</button>
-      <button onClick={goToOverview}>Lets go overview</button>
-      <button onClick={goToExperience}>Lets go Experience</button> */}
-      <Experience
-        name='experience'
-        experience={mainContent.experience}
-        // exp={exp}
-      />
-      <Technologies name='technologies' tech = {mainContent.technologies}/>
-      <Projects name='projects' projects = {mainContent.projects}/>
+      <Experience name='experience' experience={mainContent.experience} />
+      <Technologies name='technologies' tech={mainContent.technologies} />
+      <Projects name='projects' projects={mainContent.projects} />
     </MainContentContainer>
-  )
-}
+  );
+};
 
 export default MainContent;
