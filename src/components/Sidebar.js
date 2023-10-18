@@ -95,14 +95,6 @@ const Quote = styled.div`
   border-left: 4px solid ${primaryColor};
 `;
 
-const SideCardBottom = styled.div`
-  display: flex;
-  flex: 2;
-  flex-direction: ${(props) => (props.flexdir === 'column' ? 'column' : 'row')};
-  padding: 12px 12px;
-  border-radius: 12px;
-`;
-
 const EducationHeading = styled.span`
   font-size: 24px;
   font-weight: bold;

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { StyledExternalLink } from '../App';
 
@@ -34,10 +34,9 @@ const CardDate = styled.div`
   padding-left: 5px;
 `;
 
-const Experience = React.forwardRef(({ experience , exp },ref) => {
-
+const Experience = React.forwardRef(({ experience, exp }, ref) => {
   return (
-    <ExperienceContainer id="experience">
+    <ExperienceContainer id='experience'>
       <h2>Experience</h2>
       {experience.map((item) => {
         return (
@@ -47,7 +46,7 @@ const Experience = React.forwardRef(({ experience , exp },ref) => {
               <CardDate>
                 {item.duration}
                 {item.isExternal ? (
-                  <a href={item.link} target='_blank'>
+                  <a href={item.link}>
                     <StyledExternalLink />
                   </a>
                 ) : (

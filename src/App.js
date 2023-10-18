@@ -1,10 +1,8 @@
 import React from 'react';
 import Home from './pages/home';
 import styled from 'styled-components';
-import NavbarTabs from './components/NavbarTabs';
 import config from './portfolioContentConfig.json';
 import { ExternalLink } from 'react-feather';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 export const StyledExternalLink = styled(ExternalLink)`
   padding-left: 10px;
@@ -19,7 +17,7 @@ function App() {
   return (
     <div className='App'>
       {/* <NavbarTabs navbarContent={config.navbar}/> */}
-      <Home config={config}/>
+      <Home config={config} />
     </div>
   );
 }

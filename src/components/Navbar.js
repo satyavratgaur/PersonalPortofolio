@@ -2,9 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import theme from '../styles/theme';
 import Logo from '../assets/LogoLarge';
-import LogoSmall from '../assets/LogoSmall';
 import { StyledExternalLink } from '../App';
-import { Link as ScrollLink} from "react-scroll";
+import { Link as ScrollLink } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
 
 // import { overview, goToOverview } from '../components/MainContent';
@@ -15,7 +14,7 @@ const initialGray = theme.palette.gray.main;
 const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   padding: 32px;
   position: sticky;
   top: 0px;
@@ -29,8 +28,8 @@ const NavbarLinks = styled.div`
   align-items: center;
   flex: 3;
 
-  @media only screen and (max-width:768px){
-    display: none
+  @media only screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -69,37 +68,28 @@ const BurgerIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-   display: block;
-   position: absolute;
-   top: 0;
-   right: 0;
-   transform: translate(-100%,75%);
-   font-size: 1.8rem;
-   cursor: pointer;
- }
-`
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+`;
 
 const Bars = styled(FaBars)`
- color: ${initialGray};
- &:hover {
+  color: ${initialGray};
+  &:hover {
     color: ${primaryColor};
   }
-`
-
-// const StyledExternalLink = styled(ExternalLink)`
-//   padding-left: 10px;
-//   width: 16px;
-//   height: 16px;
-//   &:visited {
-//     color: inherit;
-//   }
-// `;
+`;
 
 const Navbar = ({ contentConfig, toggle }) => {
   return (
     <NavbarContainer>
       <a href='/'>
-      <StyledLogo fill={initialGray} width={150} height={50} />
+        <StyledLogo fill={initialGray} width={150} height={50} />
       </a>
       {/* <button onClick={goToOverview}>Lets go to the top</button> */}
       <BurgerIcon onClick={toggle}>
@@ -118,12 +108,12 @@ const Navbar = ({ contentConfig, toggle }) => {
           `;
           return (
             <LinkContainer
-            activeClass="active"
-            to={item.link}
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+              activeClass='active'
+              to={item.link}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
             >
               <StyledLinkIcon fill={initialGray} width={20} height={20} />
               <Link

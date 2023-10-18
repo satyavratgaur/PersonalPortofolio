@@ -10,12 +10,12 @@ import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
 
 const primaryColor = theme.palette.primary.main;
-const initialGray = theme.palette.gray.main;
 
 const loadImage = (r) => {
   let images = {};
-  r.keys().map((item, index) => {
+  r.keys().map((item) => {
     images[item.replace('./', '')] = r(item);
+    return null;
   });
   return images;
 };
@@ -39,7 +39,7 @@ const ProjectCard = styled.div`
     background-color: #f6f6f6;
     cursor: pointer;
   }
-  box-shadow:1px 1px 1px 1px #ccc;
+  box-shadow: 1px 1px 1px 1px #ccc;
 `;
 
 const ProjectHeadline = styled.div`

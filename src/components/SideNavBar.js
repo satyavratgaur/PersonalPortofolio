@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaBars } from 'react-icons/fa';
 import theme from '../styles/theme';
 import { FaTimes } from 'react-icons/fa';
 import { StyledExternalLink } from '../App';
@@ -18,7 +17,7 @@ const SideNavBarContainer = styled.aside`
   background: #0d0d0d;
   display: grid;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
@@ -61,7 +60,7 @@ const SideNavBarMenu = styled.ul`
 
   @media screen and (max-width: 768px) {
     grid-template-rows: repeat(6, 60px);
-  } ;
+  }
 `;
 
 const SideNavBarLinkContainer = styled(LinkS)`
@@ -90,7 +89,7 @@ const SideNavBar = ({ content, open, toggle }) => {
         <CloseIcon />
       </Icon>
       <SideNavBarWrapper>
-      <StyledLogo fill={initialGray} width={300} height={100} />
+        <StyledLogo fill={initialGray} width={300} height={100} />
         <SideNavBarMenu>
           {content.segmentLinks.map((item) => {
             const LinkIcon = require(`../assets/${item.icon}`).default;
