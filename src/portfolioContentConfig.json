@@ -87,7 +87,7 @@
   "mainContent": {
     "overview": {
       "title": "Hello world,",
-      "content": "I am a software guy who breathes in all aspects of building useful code. I love to tinker around with programming languages and create things from scratch. I live in SF Bay Area",
+      "content": "I am a software guy who breathes in all aspects of building useful code. I love to tinker around with programming languages and create things from scratch. I live in San Diego",
       "hobbies": [
         {
           "id": 1,
@@ -138,12 +138,27 @@
       {
         "id": 6,
         "stack": "AWS",
-        "value": 60
+        "value": 80
       },
       {
-        "id": 6,
-        "stack": "AWS",
-        "value": 80
+        "id": 12,
+        "stack": "Terraform",
+        "value": 90
+      },
+      {
+        "id": 13,
+        "stack": "GCP",
+        "value": 85
+      },
+      {
+        "id": 14,
+        "stack": "Azure",
+        "value": 75
+      },
+      {
+        "id": 15,
+        "stack": "Kubernetes",
+        "value": 65
       },
       {
         "id": 7,
@@ -158,9 +173,17 @@
     ],
     "experience": [
       {
+        "id": 0,
+        "headline": "Cloud Infrastructure Engineer, MGM Resorts International",
+        "duration": "May 2023 - Present",
+        "description": "I design and run multi-cloud infrastructure (GCP, AWS, Azure, OCI) with Terraform, and I'm currently building MGM's AI platform layer - a governed LLM gateway on Apigee with identity, token quotas, streaming and prompt-safety guardrails, the platform workstream that migrated 650+ developers from AWS Bedrock to Claude on Vertex AI, and per-user token metering that reconciles to billing within 1.7%. I also own shared VPC infrastructure on GCP and a cross-cloud IP/CIDR management system covering 1,000+ VPCs and VNets.",
+        "isExternal": false,
+        "link": ""
+      },
+      {
         "id": 1,
         "headline": "Software Engineer, MGM Resorts International",
-        "duration": "since October 2021",
+        "duration": "October 2021 - May 2023",
         "description": "I have been working as a Fullstack Software Engineer and my current work entails creating cloud-based applications and APIs that facilitate the work of internal teams. The technology stack includes .NET, Azure, AWS and Kusto database",
         "isExternal": false,
         "link": ""
@@ -223,6 +246,93 @@
       }
     ],
     "projects": [
+      {
+        "id": "saturdayPlace",
+        "headline": "Saturday.place - Stay Connected",
+        "technologies": [
+          {
+            "stack": "NextJS"
+          },
+          {
+            "stack": "Full Stack"
+          },
+          {
+            "stack": "Web App"
+          }
+        ],
+        "projectDescription": {
+          "Title": "Saturday.place - Stay Connected",
+          "imageURL": "Logo.png",
+          "content": [
+            {
+              "para": "Built saturday.place, a web app that helps friends and family stay connected and active remotely through shared challenges and photo posts."
+            },
+            {
+              "para": "Groups pick challenges, complete them during the week, and share photos of the results - keeping people close even when they're far apart."
+            }
+          ],
+          "isExternal": true,
+          "Link": "https://saturday.place"
+        }
+      },
+      {
+        "id": "strobe",
+        "headline": "strobe.fyi - Creator Discovery for Founders",
+        "technologies": [
+          {
+            "stack": "Full Stack"
+          },
+          {
+            "stack": "Web App"
+          },
+          {
+            "stack": "Creator Economy"
+          }
+        ],
+        "projectDescription": {
+          "Title": "strobe.fyi - Creator Discovery for Founders",
+          "imageURL": "Logo.png",
+          "content": [
+            {
+              "para": "Building strobe.fyi, a platform that helps startup founders discover content creators whose content and audience overlap with their target users."
+            },
+            {
+              "para": "Founders describe what they're building and get matched with creators who already speak to the audience they want to reach."
+            }
+          ],
+          "isExternal": true,
+          "Link": "https://strobe.fyi"
+        }
+      },
+      {
+        "id": "betHabit",
+        "headline": "BetHabit - iOS Accountability App",
+        "technologies": [
+          {
+            "stack": "iOS"
+          },
+          {
+            "stack": "Mobile App"
+          },
+          {
+            "stack": "Habit Tracking"
+          }
+        ],
+        "projectDescription": {
+          "Title": "BetHabit - iOS Accountability App",
+          "imageURL": "Logo.png",
+          "content": [
+            {
+              "para": "Built an iOS accountability app for habit tracking, currently in beta on TestFlight with an App Store launch planned."
+            },
+            {
+              "para": "Users put real accountability behind their habits and track streaks to stay consistent."
+            }
+          ],
+          "isExternal": false,
+          "Link": ""
+        }
+      },
       {
         "id": "CreditCard",
         "headline": "Credit Card Delinquency Prediction",
