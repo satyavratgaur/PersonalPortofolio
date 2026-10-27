@@ -178,6 +178,17 @@ const Projects = ({ projects }) => {
                   {/* <pre>{JSON.stringify(selectedPost, null, 2)}</pre> */}
                 </DialogContent>
                 <DialogActions>
+                  {selectedPost.projectDescription.isExternal &&
+                    selectedPost.projectDescription.Link && (
+                      <Button
+                        color='primary'
+                        href={selectedPost.projectDescription.Link}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        Visit site
+                      </Button>
+                    )}
                   <Button autoFocus onClick={handleClose} color='primary'>
                     Close
                   </Button>
