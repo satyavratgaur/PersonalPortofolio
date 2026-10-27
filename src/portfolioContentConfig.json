@@ -36,7 +36,7 @@
       {
         "icon": "Substack",
         "title": "Blog",
-        "link": "https://satyavratgaur.substack.com/",
+        "link": "https://substack.com/@satyagaur/",
         "isExternal": true,
         "externalIcon": true
       }
@@ -75,6 +75,14 @@
         "text": "/SatyavratDev",
         "link": "https://twitter.com/SatyavratDev",
         "socialMediabg": "#00ACEE",
+        "isExternal": true,
+        "externalIcon": false
+      },
+      {
+        "icon": "Substack",
+        "text": "@satyagaur",
+        "link": "https://substack.com/@satyagaur/",
+        "socialMediabg": "#FF6719",
         "isExternal": true,
         "externalIcon": false
       }
